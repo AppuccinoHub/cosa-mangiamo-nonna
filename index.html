@@ -5,7 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#1a100e" />
   <meta name="color-scheme" content="light" />
-  <meta name="description" content="A phone-first Italian lunch game. Name the food for Nonna, calling from Monte di Procida." />
+  <meta name="description" content="lunch video call with Nonna from Monte di Procida" />
+  <link rel="canonical" href="https://appuccinohub.github.io/cosa-mangiamo-nonna/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cosa mangiamo, Nonna?" />
+  <meta property="og:title" content="Cosa mangiamo, Nonna?" />
+  <meta property="og:description" content="lunch video call with Nonna from Monte di Procida" />
+  <meta property="og:url" content="https://appuccinohub.github.io/cosa-mangiamo-nonna/" />
+  <meta property="og:image" content="https://appuccinohub.github.io/cosa-mangiamo-nonna/img/og.png" />
+  <meta property="og:image:secure_url" content="https://appuccinohub.github.io/cosa-mangiamo-nonna/img/og.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta property="og:image:alt" content="Cosa mangiamo, Nonna? Lunch call with Nonna from Monte di Procida" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cosa mangiamo, Nonna?" />
+  <meta name="twitter:description" content="lunch video call with Nonna from Monte di Procida" />
+  <meta name="twitter:image" content="https://appuccinohub.github.io/cosa-mangiamo-nonna/img/og.png" />
+  <meta name="twitter:image:alt" content="Cosa mangiamo, Nonna? Lunch call with Nonna from Monte di Procida" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -14,7 +31,7 @@
   <link rel="icon" href="img/nonna-icon-v2.png" type="image/png" />
   <link rel="apple-touch-icon" href="img/nonna-icon-v2.png" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/app.css?v=hub1" />
 </head>
 <body>
   <div class="stage">
@@ -172,8 +189,11 @@
             <summary>How this call went</summary>
             <ol id="recap" class="recap"></ol>
           </details>
+          <a id="next-call" class="primary" href="https://appuccinohub.github.io/che-fai-oggi-nonna/?from=hub&amp;next=hub" hidden>Next call → Che fai oggi</a>
+          <a id="hub-back" class="secondary" href="https://appuccinohub.github.io/chiama-nonna/?done=cibo" hidden>Back to Chiama Nonna</a>
           <button type="button" id="again-btn" class="primary">Call Nonna again</button>
           <button type="button" id="home-btn" class="secondary">Back home</button>
+          <p class="fine hub-soft" id="hub-soft"><a href="https://appuccinohub.github.io/chiama-nonna/">Chiama Nonna</a></p>
         </div>
       </section>
     </main>
@@ -219,10 +239,10 @@
     <p class="noscript">This call needs JavaScript. Turn it on, then open the page again.</p>
   </noscript>
 
-  <script src="js/vocab.js"></script>
-  <script src="js/plates.js"></script>
-  <script src="js/match.js"></script>
-  <script src="js/speech.js"></script>
-  <script src="js/game.js"></script>
+  <script src="js/vocab.js?v=hub1"></script>
+  <script src="js/plates.js?v=hub1"></script>
+  <script src="js/match.js?v=hub1"></script>
+  <script src="js/speech.js?v=hub1"></script>
+  <script src="js/game.js?v=hub1"></script>
 </body>
 </html>

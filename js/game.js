@@ -862,6 +862,23 @@
     state.timer = 0;
   }
 
+  function cameFromHub() {
+    try {
+      return new URLSearchParams(window.location.search).get("from") === "hub";
+    } catch (err) {
+      return false;
+    }
+  }
+
+  function renderEndActions() {
+    var hub = cameFromHub();
+    $("next-call").hidden = !hub;
+    $("hub-back").hidden = !hub;
+    $("hub-soft").hidden = hub;
+    $("again-btn").classList.toggle("primary", !hub);
+    $("again-btn").classList.toggle("secondary", hub);
+  }
+
   function showSummary() {
     if (state.phase === "done") return;
     state.phase = "done";
@@ -910,6 +927,7 @@
       li.append(stars, it, en);
       list.appendChild(li);
     });
+    renderEndActions();
     showScreen("end");
     state.phase = "done";
   }

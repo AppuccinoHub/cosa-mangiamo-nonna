@@ -109,6 +109,17 @@ button:disabled { cursor: default; }
   font-weight: 800;
   font-size: 1.12rem;
 }
+a.primary, a.secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.15;
+  padding: 10px 16px;
+}
+a.primary, a.primary:visited { color: white; }
+a.secondary, a.secondary:visited { color: var(--ink); }
 .primary {
   border: 0;
   color: white;
@@ -590,7 +601,9 @@ h1 em { font-style: italic; font-weight: 560; color: var(--terra-deep); }
   align-items: baseline;
 }
 .recap-stars { color: var(--gold); letter-spacing: 1px; grid-row: span 2; }
-#again-btn { margin-bottom: 8px; }
+#screen-end .primary, #screen-end .secondary { margin-bottom: 8px; }
+.hub-soft { text-align: center; }
+.hub-soft a { color: var(--teal); font-weight: 800; }
 
 /* Dialog */
 dialog {

@@ -1,0 +1,25 @@
+{
+  "name": "Cosa mangiamo, Nonna?",
+  "short_name": "Mangiamo",
+  "description": "Name the food on a lunch call with Nonna in Monte di Procida.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a100e",
+  "theme_color": "#1a100e",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/nonna-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/nonna-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
